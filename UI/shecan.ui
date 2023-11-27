@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Shecan</class>
+ <widget class="QMainWindow" name="Shecan">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>285</width>
+    <height>330</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>285</width>
+    <height>330</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>285</width>
+    <height>330</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Shecan</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #363636;
+color: rgb(238, 238, 238);
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="title">
+    <property name="geometry">
+     <rect>
+      <x>-3</x>
+      <y>0</y>
+      <width>291</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(183, 239, 205);
+font: 20pt &quot;Jokerman&quot;;
+background-color: #252525;
+padding-left: 108px;
+border-radius: 7px;
+border-bottom: 2px solid rgb(76, 211, 194);</string>
+    </property>
+    <property name="text">
+     <string>Shecan</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="acitve_btn">
+    <property name="geometry">
+     <rect>
+      <x>28</x>
+      <y>190</y>
+      <width>231</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 30px;
+border: 2px solid #B7EFCD;
+background-color: #4CD3C2;
+color: 252525;
+font: 16pt &quot;Jokerman&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Active</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="status">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #FFBCBC;</string>
+    </property>
+    <property name="text">
+     <string>Status : DeActive</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>acitve_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Shecan</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>143</x>
+     <y>220</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>142</x>
+     <y>164</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
